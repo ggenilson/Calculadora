@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="pt-pt">
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<marquee id="marq">Calculadora científica...</marquee>
+<hr>
+<br><br><br><br><br>
+
+<p id="tb">
+<center>
+    <input type="text" class="texto" id="text"><br><br>
+    <input type="text" class="texto" id="text1">
+</center>
+<center>
+    <table>
+        <tr>
+            <td><input type="button" value="<<" class="hj" name="as" onclick="limpar(2)"></td>
+            <td><input type="button" value="CL" class="hj" name="as" onclick="limpar(1)"></td>
+            <td><input type="button" value="n!" class="hj" name="as" onclick="imprimir('!')"></td>
+            <td><input type="button" value="+" class="hj1" id="mais" onclick="imprimir(mais.value)"></td>
+            <td><input type="button" value="sin" class="hj3" name="as" id="s50" onclick="imprimir(s50.value)" disabled></td>
+            <td><input type="button" value="^" class="hj3" name="as" id="s503" onclick="imprimir(s503.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="hj" name="as" id="s" onclick="imprimir(s.value)"></td>
+            <td><input type="button" value="8" class="hj" name="as" id="s1" onclick="imprimir(s1.value)"></td>
+            <td><input type="button" value="9" class="hj" name="as" id="s2" onclick="imprimir(s2.value)"></td>
+            <td><input type="button" value="-" class="hj1" id="menos" onclick="imprimir(menos.value)"></td>
+            <td><input type="button" value="cos" class="hj3" id="C50" onclick="imprimir(C50.value)" disabled></td>
+            <td><input type="button" value="√" class="hj3" name="as" id="s502" onclick="imprimir(s502.value)" disabled></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" class="hj" name="as" id="s3" onclick="imprimir(s3.value)"></td>
+            <td><input type="button" value="5" class="hj" name="as" name="as" id="s4" onclick="imprimir(s4.value)"></td>
+            <td><input type="button" value="6" class="hj" name=as" id="s5" onclick="imprimir(s5.value)"></td>
+            <td><input type="button" value="*" class="hj1" id="mult" onclick="imprimir(mult.value)"></td>
+            <td><input type="button" value="tan" class="hj3" id="T50" onclick="imprimir(T50.value)" disabled></td>
+            <td><input type="button" value="%" class="hj3" id="T501" onclick="imprimir(T501.value)"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" class="hj" name="as" id="s7" onclick="imprimir(s7.value)"></td>
+            <td><input type="button" value="2" class="hj" name="as" id="s8" onclick="imprimir(s8.value)"></td>
+            <td><input type="button" value="3" class="hj" name="as" id="s9" onclick="imprimir(s9.value)"></td>
+            <td><input type="button" value="/" class="hj1" id="div" onclick="imprimir(div.value)"></td>
+            <td><input type="button" value="(" class="hj3" name="as" id="s90" onclick="imprimir(s90.value)"></td>
+            <td><input type="button" value=")" class="hj3" name="as" id="s91" onclick="imprimir(s91.value)"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="0" class="hj" name="as" id="s0" onclick="imprimir(s0.value)"></td>
+            <td><input type="button" value="." class="hj" name="as" id="s10" onclick="imprimir(s10.value)"></td>
+            <td colspan="2"><input type="button" value="=" class="hj7" name="as" onclick="igual()"></td>
+            <td><input type="button" value="1/x" class="hj3" id="T51" onclick="imprimir('1/')"></td>
+            <td><input type="button" value="PI" class="hj3" id="T52" onclick="imprimir(T52.value+'(')" disabled></td>
+        </tr>
+    </table>
+</center>
+</p>
+<hr>
+<marquee id="marq">II11B / 2017</marquee>
+</body>
+</html>
